@@ -14,6 +14,24 @@
   --border-radius: 8px;
 }
 
+/* Lock the viewport and prevent horizontal scroll */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Blocks horizontal scrolling */
+  position: relative;
+}
+
+/* Ensure all elements stay within bounds */
+* {
+  max-width: 100%; /* Prevents elements from overflowing */
+  box-sizing: border-box; /* Includes padding in width calculations */
+}
+
+/* Extra protection for specific sections */
+.container, .hero, .projects__grid {
+  overflow: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
