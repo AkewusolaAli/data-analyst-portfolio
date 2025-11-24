@@ -2,139 +2,169 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- In your HTML head -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Edmond's Portfolio | Senior Data Analyst | Consultant | Business Intelligence Specialist</title>
-    <meta name="description" content="Portfolio of Chimobi Ibrahim, Data Analyst specializing in business intelligence and data visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Edmond Nathan's Portfolio | Senior Data Analyst | Business Intelligence Specialist</title>
+    <meta name="description" content="Portfolio of Edmond Nathan, Senior Data Analyst specializing in business intelligence, data visualization, Power BI, Tableau, and SQL">
+    <meta name="keywords" content="Data Analyst, Power BI, Tableau, SQL, Business Intelligence, Data Visualization">
+    <meta name="author" content="Edmond Nathan">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Edmond Nathan - Senior Data Analyst Portfolio">
+    <meta property="og:description" content="Transforming complex data into actionable insights through cutting-edge analysis and stunning visualizations">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="https://edmondnathan.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Edmond Nathan - Senior Data Analyst">
+    <meta name="twitter:description" content="Transforming complex data into actionable insights">
+    <meta name="twitter:image" content="images/profile.jpg">
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Mobile Menu Toggle -->
-    <button class="menu-toggle" aria-label="Toggle menu">
+    <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <i class="fas fa-bars"></i> Menu
     </button>
 
     <div class="main-wrapper">
         <!-- Sidebar Navigation -->
-<nav id="main-nav" class="portfolio__menu">
-    <div class="portfolio__brand">
-        <h1>Edmond</h1>
-        <p>Data Analyst</p>
-    </div>
+        <nav id="main-nav" class="portfolio__menu" role="navigation" aria-label="Main navigation">
+            <div class="portfolio__brand">
+                <h1>Edmond Nathan</h1>
+                <p>Data Analyst</p>
+            </div>
 
-    <ul class="portfolio__menu-list">
-        <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
-        <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-        <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
-        <li><a href="#datasets"><i class="fas fa-database"></i> Datasets</a></li>
-    </ul>
+            <ul class="portfolio__menu-list">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+                <li><a href="#datasets"><i class="fas fa-database"></i> Datasets</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
 
-    <div class="sidebar__contact">
-        <h3>Get in touch</h3>
-        <p>Available for Data Analysis roles, Projects, Freelance, and Contract work.</p>
-        <a href="mailto:edmondnathant@gmail.com" class="email-link" data-email="edmondnathant@gmail.com">
-            <i class="fas fa-envelope"></i>
-            edmondnathant@gmail.com
-        </a>
-        <div class="location">
-            <i class="fas fa-map-marker-alt"></i> Lagos, Nigeria
-        </div>
-    </div>
+            <div class="sidebar__contact">
+                <h3>Get in touch</h3>
+                <p>Available for Data Analysis roles, Projects, Freelance, and Contract work.</p>
+                <a href="mailto:edmondnathant@gmail.com" class="email-link" data-email="edmondnathant@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    edmondnathant@gmail.com
+                </a>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i> Lagos, Nigeria
+                </div>
+            </div>
 
-    <div class="sidebar-footer">
-        <p>&copy; <span id="year"></span> Edmond Nathan</p>
-        <p>All rights reserved</p>
-    </div>
-</nav>
+            <div class="sidebar-footer">
+                <p>&copy; <span id="year"></span> Edmond Nathan</p>
+                <p>All rights reserved</p>
+            </div>
+        </nav>
 
         <!-- Main Content -->
         <main class="portfolio__content">
             <!-- Hero Section -->
-<section id="home" class="hero">
-    <div class="hero__content">
-        <div class="hero__text">
-            <h1 class="hero__title">Hi, I'm <span class="text-accent">Edmond Nathan</span></h1>
-            <p class="hero__subtitle">Senior Data Analyst | Consultant | Business Intelligence Specialist</p>
-            <p class="hero__description">
-                Transforming complex data into actionable insights through cutting-edge analysis 
-                and stunning visualizations that drive business decisions.
-            </p>
-            <div class="hero__cta">
-                <a href="#projects" class="btn btn--primary">
-                    <i class="fas fa-eye"></i> View My Work
-                </a>
-                <a href="#contact" class="btn btn--outline">
-                    <i class="fas fa-paper-plane"></i> Contact Me
-                </a>
-            </div>
-        </div>
-        <div class="hero__image">
-            <span class="hero__date">2022-12-14</span>
-            <img src="images/profile.jpg" alt="Chimobi Ibrahim" loading="lazy">
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="section about">
-    <div class="container">
-        <div class="about__content">
-            <div class="about__text">
-                <h2 class="about__title">About Me</h2>
-                <p class="about__description">
-                    I'm Edmond Nathan, and I am a <span class="about__highlight">certified Microsoft Power BI Data Analyst.</span> I possess a diverse skill set that encompasses problem-solving, data cleaning and wrangling, retrieving data from databases, data analysis, report and dashboard creation using Excel, Power BI, Tableau, and R. Throughout my experience, I have developed expertise in utilizing various <span class="about__highlight">tools,</span> including R Programming, SQL, MS Excel, Power BI, Power Query, and Power Pivot. I find great satisfaction in using my problem-solving and analytical skills to fulfill clients’ needs and bring smiles to their faces.
-                </p>
-                <p class="about__description">
-                    My approach combines <span class="about__highlight">technical skills</span> with clear communication to make complex data accessible to stakeholders at all levels. I believe data tells a story, and my job is to translate that story into actionable strategies.
-                </p>
-            </div>
-            <div class="about__skills">
-                <h3><i class="fas fa-tools"></i> Skills & Tools</h3>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-chart-line"></i> Analysis</h4>
-                        <ul>
-                            <li>Data Cleaning</li>
-                            <li>Exploratory Analysis</li>
-                            <li>Statistical Analysis</li>
-                            <li>Predictive Modeling</li>
-                        </ul>
+            <section id="home" class="hero">
+                <div class="hero__content">
+                    <div class="hero__text">
+                        <h1 class="hero__title">Hi, I'm <span class="text-accent">Edmond Nathan</span></h1>
+                        <p class="hero__subtitle">Senior Data Analyst | Consultant | Business Intelligence Specialist</p>
+                        <p class="hero__description">
+                            Transforming complex data into actionable insights through cutting-edge analysis 
+                            and stunning visualizations that drive business decisions.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="#projects" class="btn btn--primary">
+                                <i class="fas fa-eye"></i> View My Work
+                            </a>
+                            <a href="#contact" class="btn btn--outline">
+                                <i class="fas fa-paper-plane"></i> Contact Me
+                            </a>
+                        </div>
                     </div>
-                    <div class="skill-category">
-                        <h4><i class="fas fa-chart-pie"></i> Visualization</h4>
-                        <ul>
-                            <li>Power BI</li>
-                            <li>Tableau</li>
-                            <li>Excel</li>
-                            <li>Looker Studio</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4><i class="fas fa-code"></i> Programming</h4>
-                        <ul>
-                            <li>Python</li>
-                            <li>SQL</li>
-                            <li>R</li>
-                            <li>DAX</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h4><i class="fas fa-database"></i> Data Management</h4>
-                        <ul>
-                            <li>SQL Server</li>
-                            <li>BigQuery</li>
-                            <li>ETL Processes</li>
-                            <li>Data Warehousing</li>
-                        </ul>
+                    <div class="hero__image">
+                        <span class="hero__date">2022-12-14</span>
+                        <img src="images/profile.jpg" alt="Edmond Nathan - Data Analyst" loading="lazy">
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
+            <!-- About Section -->
+            <section id="about" class="section about">
+                <div class="container">
+                    <div class="about__content">
+                        <div class="about__text">
+                            <h2 class="about__title">About Me</h2>
+                            <p class="about__description">
+                                I'm Edmond Nathan, and I am a <span class="about__highlight">certified Microsoft Power BI Data Analyst.</span> I possess a diverse skill set that encompasses problem-solving, data cleaning and wrangling, retrieving data from databases, data analysis, report and dashboard creation using Excel, Power BI, Tableau, and R. Throughout my experience, I have developed expertise in utilizing various <span class="about__highlight">tools,</span> including R Programming, SQL, MS Excel, Power BI, Power Query, and Power Pivot. I find great satisfaction in using my problem-solving and analytical skills to fulfill clients' needs and bring smiles to their faces.
+                            </p>
+                            <p class="about__description">
+                                My approach combines <span class="about__highlight">technical skills</span> with clear communication to make complex data accessible to stakeholders at all levels. I believe data tells a story, and my job is to translate that story into actionable strategies.
+                            </p>
+                        </div>
+                        <div class="about__skills">
+                            <h3><i class="fas fa-tools"></i> Skills & Tools</h3>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <h4><i class="fas fa-chart-line"></i> Analysis</h4>
+                                    <ul>
+                                        <li>Data Cleaning</li>
+                                        <li>Exploratory Analysis</li>
+                                        <li>Statistical Analysis</li>
+                                        <li>Predictive Modeling</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <h4><i class="fas fa-chart-pie"></i> Visualization</h4>
+                                    <ul>
+                                        <li>Power BI</li>
+                                        <li>Tableau</li>
+                                        <li>Excel</li>
+                                        <li>Looker Studio</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <h4><i class="fas fa-code"></i> Programming</h4>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>SQL</li>
+                                        <li>R</li>
+                                        <li>DAX</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <h4><i class="fas fa-database"></i> Data Management</h4>
+                                    <ul>
+                                        <li>SQL Server</li>
+                                        <li>BigQuery</li>
+                                        <li>ETL Processes</li>
+                                        <li>Data Warehousing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
             <section id="projects" class="section projects">
                 <div class="container">
                     <h2 class="section__title">Featured Projects</h2>
@@ -142,8 +172,152 @@
                         <!-- Project 1 -->
                         <article class="project-card">
                             <div class="project-card__image">
-                                <img src="images/Project11.jpg" alt="Spotify Wrapped Dashboard" loading="lazy">
+                                <img src="images/sales-perf-1.jpg" alt="Spotify Wrapped Dashboard Project" loading="lazy">
                                 <span class="project-card__badge">New</span>
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Sales Performnce Dashboard</h3>
+                                <p class="project-description">Analyzing sales trends and key performance indicators to help businesses track growth, identify opportunities, and improve decision-making.</p>
+                                <div class="project-tools">
+                                    <span><i class="fas fa-table"></i> Excel</span>
+                                    <span><i class="fas fa-chart-pie"></i> Power BI</span>
+                                    <span><i class="fas fa-bolt"></i> Power Automate</span>
+                                    <span><i class="fas fa-list-ul"></i> SharePoint List</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZDBjMzljNzMtN2JhNi00ZWZmLTg0OGItOTk3YWE5MWQzMjJjIiwidCI6ImJmMjc4ZDllLTZkYzQtNGQyZS05MmFmLWM4ZDMyZjg3OTc4OSJ9" target="_blank" class="btn btn--primary">
+                                        <i class="fas fa-book-open"></i> Case Study
+                                    </a>
+                                    <a href="projects/spotify-dashboard.html" class="btn btn--outline">
+                                        <i class="fas fa-chart-bar"></i> Dashboard
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+            
+                        <!-- Project 2 -->
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/sales-over.JPG" alt="Hotel Booking Analysis Project" loading="lazy">
+                                <span class="project-card__badge">Featured</span>
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Ecommerce sales dashboard</h3>
+                                <p class="project-description">Tracking online sales performance, customer behavior, and product trends to optimize marketing efforts and boost overall revenue.</p>
+                                <div class="project-tools">
+                                    <span><i class="fas fa-table"></i> Excel</span>
+                                    <span><i class="fas fa-chart-pie"></i> Power BI</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMGRiMTQ4YWItNDg2Ni00NGE0LThmNjctZWRlNGFkMzYwZTQ3IiwidCI6ImJmMjc4ZDllLTZkYzQtNGQyZS05MmFmLWM4ZDMyZjg3OTc4OSJ9" class="btn btn--primary" target="_blank"> 
+                                        <i class="fas fa-book-open"></i> Case Study
+                                    </a>
+                                    <a href="projects/hotel-dashboard.html" class="btn btn--outline">
+                                        <i class="fas fa-chart-bar"></i> Dashboard
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+            
+                        <!-- Project 3 -->
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/HR-Attrition.JPG" alt="Super Store Sales Analysis" loading="lazy">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">HR Attrition dashboard</h3>
+                                <p class="project-description">Examining employee turnover patterns to identify key drivers of attrition and support data-driven retention strategies.</p>
+                                <div class="project-tools">
+                                    <span><i class="fas fa-table"></i> Excel</span>
+                                    <span><i class="fas fa-chart-pie"></i> Tableau</span>
+                                    <span><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiYWVlYTlhMjUtY2I1Zi00MzBiLTkxMjctN2NkZDg4YTA0MDFiIiwidCI6ImJmMjc4ZDllLTZkYzQtNGQyZS05MmFmLWM4ZDMyZjg3OTc4OSJ9" class="btn btn--primary" target="_blank">
+                                        <i class="fas fa-book-open"></i> Case Study
+                                    </a>
+                                    <a href="projects/superstore-dashboard.html" class="btn btn--outline">
+                                        <i class="fas fa-chart-bar"></i> Dashboard
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 4 -->
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/Insurance.jpg" alt="E-Commerce Analytics Dashboard" loading="lazy">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Insurance Dashboard</h3>
+                                <p class="project-description">Analyzing policy trends, claims performance, and customer demographics to support risk assessment and improve decision-making.</p>
+                                <div class="project-tools">
+                                    <span><i class="fas fa-table"></i> Excel</span>
+                                    <span><i class="fas fa-database"></i> SQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="projects/ecommerce-case-study.html" class="btn btn--primary" target="_blank">
+                                        <i class="fas fa-book-open"></i> Case Study
+                                    </a>
+                                    <a href="projects/ecommerce-dashboard.html" class="btn btn--outline">
+                                        <i class="fas fa-chart-bar"></i> Dashboard
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 5 -->
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/sales&perf.jpg" alt="Financial Performance Dashboard" loading="lazy">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Sales and Performance Dashboard</h3>
+                                <p class="project-description">Monitoring sales outcomes and operational performance to uncover trends, improve efficiency, and drive overall business growth.</p>
+                                <div class="project-tools">
+                                    <span><i class="fas fa-table"></i> Excel</span>
+                                    <span><i class="fas fa-chart-pie"></i> Power BI</span>
+                                    <span><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZmEzMjE4ODUtNWJiMS00NzQxLWFjM2MtMmMxMzA5ZmRjOTNhIiwidCI6ImJmMjc4ZDllLTZkYzQtNGQyZS05MmFmLWM4ZDMyZjg3OTc4OSJ9" class="btn btn--primary" target="_blank">
+                                        <i class="fas fa-book-open"></i> Case Study
+                                    </a>
+                                    <a href="projects/finance-dashboard.html" class="btn btn--outline">
+                                        <i class="fas fa-chart-bar"></i> Dashboard
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Project 6 -->
+                        <article class="project-card"> 
+                            <div class="project-card__image">
+                                <img src="images/employee.JPG" alt="HR Analytics Dashboard" loading="lazy">
+                            </div>
+                            <div class="project-card__content">
+                                <h3 class="project-card__title">Employee  Attrition Dashboard</h3>
+                                <p class="project-description">Identifying patterns in employee turnover to reveal key retention risks and support strategic workforce planning</p>
+                                <div class="project-tools">
+                                    <span><i class="fas fa-table"></i> Excel</span>
+                                    <span><i class="fas fa-chart-pie"></i> Power BI</span>
+                                    <span><i class="fas fa-file-powerpoint"></i> PowerPoint</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://app.powerbi.com/view?r=eyJrIjoiODZlNzgwODItMmU3ZS00MGI3LTgyNmYtN2U3OWYyMjcwMmRiIiwidCI6ImJmMjc4ZDllLTZkYzQtNGQyZS05MmFmLWM4ZDMyZjg3OTc4OSJ9" class="btn btn--primary" target="_blank">
+                                        <i class="fas fa-book-open"></i> Case Study
+                                    </a>
+                                    <a href="projects/hr-dashboard.html" class="btn btn--outline">
+                                        <i class="fas fa-chart-bar"></i> Dashboard
+                                    </a>
+                                </div>
+                            </div>
+                        </article>          
+
+                        <!-- Project 7 -->
+                        <article class="project-card">
+                            <div class="project-card__image">
+                                <img src="images/Project11.jpg" alt="Spotify Wrapped Dashboard" loading="lazy">
                             </div>
                             <div class="project-card__content">
                                 <h3 class="project-card__title">Spotify Wrapped Dashboard</h3>
@@ -165,11 +339,10 @@
                             </div>
                         </article>
             
-                        <!-- Project 2 -->
+                        <!-- Project 8 -->
                         <article class="project-card">
                             <div class="project-card__image">
                                 <img src="images/project22.jpg" alt="Hotel Booking Analysis" loading="lazy">
-                                <span class="project-card__badge">Featured</span>
                             </div>
                             <div class="project-card__content">
                                 <h3 class="project-card__title">Hotel Booking Analysis</h3>
@@ -192,14 +365,14 @@
                             </div>
                         </article>
             
-                        <!-- Project 3 -->
+                        <!-- Project 9 -->
                         <article class="project-card">
                             <div class="project-card__image">
                                 <img src="images/Project33.jpg" alt="Super Store Analysis" loading="lazy">
                             </div>
                             <div class="project-card__content">
-                                <h3 class="project-card__title">Super Store Analysis</h3>
-                                <p class="project-description">Regional sales performance and customer segmentation for a retail chain with predictive modeling.</p>
+                                <h3 class="project-card__title">Sales Performance Analysis</h3>
+                                <p class="project-description">Evaluating sales data to uncover performance trends, measure KPIs, and support strategies that drive revenue growth.</p>
                                 <div class="project-tools">
                                     <span><i class="fas fa-table"></i> Excel</span>
                                     <span><i class="fas fa-chart-pie"></i> Tableau</span>
@@ -216,14 +389,14 @@
                             </div>
                         </article>
 
-                        <!-- Project 4 -->
+                        <!-- Project 10 -->
                         <article class="project-card">
                             <div class="project-card__image">
                                 <img src="images/Project44.jpg" alt="Super Store Analysis" loading="lazy">
                             </div>
                             <div class="project-card__content">
-                                <h3 class="project-card__title">Super Store Analysis</h3>
-                                <p class="project-description">Regional sales performance and customer segmentation for a retail chain with predictive modeling.</p>
+                                <h3 class="project-card__title">Yoga Attendance Analysis</h3>
+                                <p class="project-description">Analyzing class attendance trends to understand member engagement and improve scheduling and studio planning.</p>
                                 <div class="project-tools">
                                     <span><i class="fas fa-table"></i> Excel</span>
                                     <!-- <span><i class="fas fa-chart-pie"></i> Tableau</span>
@@ -241,14 +414,14 @@
                             </div>
                         </article>
 
-                        <!-- Project 5 -->
+                        <!-- Project 11 -->
                         <article class="project-card">
                             <div class="project-card__image">
                                 <img src="images/Project55.jpg" alt="Super Store Analysis" loading="lazy">
                             </div>
                             <div class="project-card__content">
-                                <h3 class="project-card__title">Super Store Analysis</h3>
-                                <p class="project-description">Regional sales performance and customer segmentation for a retail chain with predictive modeling.</p>
+                                <h3 class="project-card__title">Survey Report Analysis</h3>
+                                <p class="project-description">Interpreting survey responses to uncover key insights, measure satisfaction levels, and support data-driven decision-making</p>
                                 <div class="project-tools">
                                     <span><i class="fas fa-table"></i> Excel</span>
                                     <span><i class="fas fa-chart-pie"></i> Power BI</span>
@@ -265,14 +438,14 @@
                             </div>
                         </article>
 
-                        <!-- Project 6 -->
+                        <!-- Project 12 -->
                         <article class="project-card"> 
                             <div class="project-card__image">
                                 <img src="images/Project66.jpg" alt="Super Store Analysis" loading="lazy">
                             </div>
                             <div class="project-card__content">
-                                <h3 class="project-card__title">Super Store Analysis</h3>
-                                <p class="project-description">Regional sales performance and customer segmentation for a retail chain with predictive modeling.</p>
+                                <h3 class="project-card__title">Churn Rate Dashboard</h3>
+                                <p class="project-description">Tracking customer attrition patterns to identify risks, improve retention strategies, and boost long-term revenue.</p>
                                 <div class="project-tools">
                                     <span><i class="fas fa-table"></i> Excel</span>
                                     <span><i class="fas fa-chart-pie"></i> Power BI</span>
@@ -289,14 +462,14 @@
                             </div>
                         </article>
 
-                        <!-- Project 7 -->
+                        <!-- Project 13 -->
                         <article class="project-card">
                             <div class="project-card__image">
                                 <img src="images/Project77.jpg" alt="Super Store Analysis" loading="lazy">
                             </div>
                             <div class="project-card__content">
-                                <h3 class="project-card__title">Super Store Analysis</h3>
-                                <p class="project-description">Regional sales performance and customer segmentation for a retail chain with predictive modeling.</p>
+                                <h3 class="project-card__title">Churn Payer and Converstion Rate Report</h3>
+                                <p class="project-description">Analyzing customer churn, paying behavior, and conversion trends to optimize retention strategies and drive revenue growth.</p>
                                 <div class="project-tools">
                                     <span><i class="fas fa-server"></i> BigQuerry</span>
                                     <span><i class="fas fa-database"></i> SQL</span>
@@ -314,14 +487,14 @@
                             </div>
                         </article>
 
-<!-- Project 8 -->
+<!-- Project 14 -->
 <article class="project-card">
     <div class="project-card__image">
         <img src="images/Project88.jpg" alt="Super Store Analysis" loading="lazy">
     </div>
     <div class="project-card__content">
-        <h3 class="project-card__title">Super Store Analysis</h3>
-        <p class="project-description">Regional sales performance and customer segmentation for a retail chain with predictive modeling.</p>
+        <h3 class="project-card__title">Salon Sales  Report</h3>
+        <p class="project-description">Analyzing salon sales and service trends to track performance, identify popular offerings, and support business growth.</p>
         <div class="project-tools">
             <span><i class="fas fa-table"></i> Excel</span>
             <span><i class="fas fa-chart-pie"></i> Power BI</span>
@@ -337,14 +510,14 @@
     </div>
 </article>
 
-<!-- Project 9 -->
+<!-- Project 15 -->
 <article class="project-card">
     <div class="project-card__image">
         <img src="images/Project99.jpg" alt="Super Store Analysis" loading="lazy">
     </div>
     <div class="project-card__content">
-        <h3 class="project-card__title">Super Store Analysis</h3>
-        <p class="project-description">Regional sales performance and customer segmentation for a retail chain with predictive modeling.</p>
+        <h3 class="project-card__title">Ecommerce Sales Dashboard</h3>
+        <p class="project-description">Monitoring online sales, customer behavior, and product trends to drive strategic decisions and maximize revenue</p>
         <div class="project-tools">
             <span><i class="fas fa-table"></i> Excel</span>
             <span><i class="fas fa-file-excel"></i> Excel Macro</span>
@@ -360,59 +533,122 @@
     </div>
 </article>
 
+            
                     </div>
                 </div>
             </section>
 
-           <!-- Contact Section -->
-<section id="contact" class="section contact">
-    <div class="container">
-        <h2 class="section__title">Get In Touch</h2>
-        
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="john@example.com" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" placeholder="I'd love to discuss how we can work together..." required></textarea>
-            </div>
-            
-            <button type="submit" class="contact-submit">
-                <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-        </form>
-        
-        <div class="contact-info">
-            <div class="contact-card">
-                <i class="fas fa-envelope"></i>
-                <h3>Email Me</h3>
-                <a href="mailto:edmondnathant@gmail.com">edmondnathant@gmail.com</a>
-            </div>
-            
-            <div class="contact-card">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Location</h3>
-                <p>Lagos, Nigeria</p>
-            </div>
-            
-            <div class="contact-card">
-                <i class="fas fa-calendar-alt"></i>
-                <h3>Availability</h3>
-                <p>Mon-Fri: 9am - 5pm EST</p>
-            </div>
-        </div>
-    </div>
-</section>
+            <!-- Resume Section -->
+            <section id="resume" class="section resume">
+                <div class="container">
+                    <h2 class="section__title">Resume & Experience</h2>
+                    <div class="resume__content">
+                        <div class="resume__intro">
+                            <p>Download my complete resume or view my professional experience and certifications below.</p>
+                            <a href="files/Edmond-Nathan-Resume.pdf" class="btn btn--primary" download>
+                                <i class="fas fa-download"></i> Download Resume (PDF)
+                            </a>
+                        </div>
+                        
+                        <div class="resume__placeholder">
+                            <i class="fas fa-file-alt"></i>
+                            <p>Detailed experience timeline coming soon</p>
+                            <p class="small-text">Including work history, education, and certifications</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Section -->
+            <section id="blog" class="section blog">
+                <div class="container">
+                    <h2 class="section__title">Blog & Insights</h2>
+                    <div class="blog__content">
+                        <div class="blog__intro">
+                            <p>Sharing thoughts on data analysis, visualization best practices, and industry trends.</p>
+                        </div>
+                        
+                        <div class="blog__placeholder">
+                            <i class="fas fa-blog"></i>
+                            <p>Blog posts coming soon</p>
+                            <p class="small-text">Stay tuned for articles on data analytics, Power BI tips, and more</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Datasets Section -->
+            <section id="datasets" class="section datasets">
+                <div class="container">
+                    <h2 class="section__title">Public Datasets</h2>
+                    <div class="datasets__content">
+                        <div class="datasets__intro">
+                            <p>Curated datasets for learning and practice. Perfect for aspiring data analysts.</p>
+                        </div>
+                        
+                        <div class="datasets__placeholder">
+                            <i class="fas fa-database"></i>
+                            <p>Dataset repository coming soon</p>
+                            <p class="small-text">Free datasets for practice and portfolio projects</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <h2 class="section__title">Get In Touch</h2>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" placeholder="I'd love to discuss how we can work together..." required aria-required="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="contact-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Me</h3>
+                            <a href="mailto:edmondnathant@gmail.com">edmondnathant@gmail.com</a>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Location</h3>
+                            <p>Lagos, Nigeria</p>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h3>Availability</h3>
+                            <p>Mon-Fri: 9am - 5pm WAT</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
