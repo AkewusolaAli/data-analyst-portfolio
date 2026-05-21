@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO Meta Tags -->
@@ -36,7 +36,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_fixed.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
@@ -64,23 +64,6 @@
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
 
-            <div class="sidebar__contact">
-                <h3>Get in touch</h3>
-                <p>Available for Data Analysis roles, Projects, Freelance, and Contract work.</p>
-                <a href="mailto:edmondnathant@gmail.com" class="email-link" data-email="edmondnathant@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                    edmondnathant@gmail.com
-                </a>
-                <div class="location">
-                    <i class="fas fa-map-marker-alt"></i> Lagos, Nigeria
-                </div>
-            </div>
-
-            <div class="sidebar-footer">
-                <p>&copy; <span id="year"></span> Edmond Nathan</p>
-                <p>All rights reserved.</p>
-                <p>Website Developed by A4CodeLab Technology</p>
-            </div>
         </nav>
 
         <!-- Main Content -->
@@ -106,7 +89,6 @@
                         </div>
                     </div>
                     <div class="hero__image">
-                        <span class="hero__date">14-12-2024</span>
                         <img src="images/profile.jpg" alt="Edmond Nathan - Data Analyst" loading="lazy">
                     </div>
                 </div>
@@ -133,6 +115,28 @@
                                 communication to make complex data accessible to stakeholders at all levels. I believe
                                 data tells a story, and my job is to translate that story into actionable strategies.
                             </p>
+
+                            <!-- Stats Row -->
+                            <div class="about__stats">
+                                <div class="about__stat">
+                                    <span class="about__stat-number">5+</span>
+                                    <span class="about__stat-label">Years Experience</span>
+                                </div>
+                                <div class="about__stat">
+                                    <span class="about__stat-number">30+</span>
+                                    <span class="about__stat-label">Projects Completed</span>
+                                </div>
+                                <div class="about__stat">
+                                    <span class="about__stat-number">15+</span>
+                                    <span class="about__stat-label">Happy Clients</span>
+                                </div>
+                            </div>
+
+                            <!-- Availability Badge -->
+                            <div class="about__availability">
+                                <span class="about__availability-dot"></span>
+                                Available for freelance, contract &amp; full-time roles
+                            </div>
                         </div>
                         <div class="about__skills">
                             <h3><i class="fas fa-tools"></i> Skills & Tools</h3>
@@ -607,61 +611,141 @@
                 <div class="container">
                     <h2 class="section__title">Get In Touch</h2>
 
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" placeholder="John Doe" required
-                                aria-required="true">
+                    <div class="contact__content">
+                        <!-- Contact Form -->
+                        <div class="contact__form-container">
+                            <form class="contact-form" id="contactForm">
+
+                                <!-- Web3Forms Access Key -->
+                                <input type="hidden" name="access_key" value="4447f52f-d937-4c6e-988b-48dec01f5821">
+
+                                <!-- Subject -->
+                                <input type="hidden" name="subject" value="New Contact Form Submission from Portfolio">
+
+                                <!-- Honeypot anti-spam: hidden from humans, visible to bots -->
+                                <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+                                <div class="form-group">
+                                    <label for="name">Your Name <span class="required">*</span></label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Your Message <span class="required">*</span></label>
+                                    <textarea id="message" name="message"
+                                        placeholder="I'd love to discuss how we can work together..." rows="5"
+                                        required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn--primary contact-submit">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email">Email Address <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required
-                                aria-required="true">
-                        </div>
+                        <!-- Contact Info -->
+                        <div class="contact-info">
+                            <div class="contact-card">
+                                <i class="fas fa-envelope"></i>
+                                <h3>Email Me</h3>
+                                <a href="mailto:edmondnathant@gmail.com">edmondnathant@gmail.com</a>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="message">Your Message <span class="required">*</span></label>
-                            <textarea id="message" name="message"
-                                placeholder="I'd love to discuss how we can work together..." required
-                                aria-required="true"></textarea>
-                        </div>
+                            <div class="contact-card">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>Location</h3>
+                                <p>Lagos, Nigeria</p>
+                            </div>
 
-                        <button type="submit" class="contact-submit">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
+                            <div class="contact-card">
+                                <i class="fas fa-calendar-alt"></i>
+                                <h3>Availability</h3>
+                                <p>Mon-Fri: 9am - 5pm WAT</p>
+                            </div>
 
-                    <div class="contact-info">
-                        <div class="contact-card">
-                            <i class="fas fa-envelope"></i>
-                            <h3>Email Me</h3>
-                            <a href="mailto:edmondnathant@gmail.com">edmondnathant@gmail.com</a>
-                        </div>
-
-                        <div class="contact-card">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h3>Location</h3>
-                            <p>Lagos, Nigeria</p>
-                        </div>
-
-                        <div class="contact-card">
-                            <i class="fas fa-calendar-alt"></i>
-                            <h3>Availability</h3>
-                            <p>Mon-Fri: 9am - 5pm WAT</p>
+                            <div class="contact-card">
+                                <i class="fas fa-clock"></i>
+                                <h3>Response Time</h3>
+                                <p>Within 24-48 hours</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-    </div>
+
+    </div> <!-- Close main-wrapper -->
+
+    <!-- ===== Site Footer ===== -->
+    <footer class="site-footer">
+        <div class="footer__inner">
+
+            <div class="footer__brand">
+                <h3>Edmond Nathan</h3>
+                <p>Senior Data Analyst &middot; Lagos, Nigeria</p>
+            </div>
+
+            <div class="footer__contact">
+                <a href="mailto:edmondnathant@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    edmondnathant@gmail.com
+                </a>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    Lagos, Nigeria
+                </p>
+                <p>
+                    <i class="fas fa-clock"></i>
+                    Mon–Fri, 9am–5pm WAT
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; <span id="year"></span> Edmond Nathan. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Scroll to Top Button -->
     <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script src="js/script.js"></script>
+    <!-- Floating Social Icons -->
+    <!-- ======================================================
+         SOCIAL MEDIA LINKS — INSERT YOUR REAL URLs BELOW
+         Replace the href="..." value on each link with your URL
+         ====================================================== -->
+    <div class="floating-social">
+
+        <!-- LINKEDIN — already correct, no change needed -->
+        <a href="https://www.linkedin.com/in/edmond-nathan/" target="_blank" rel="noopener noreferrer"
+            class="floating-social-link" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <!-- GITHUB — replace the URL below with yours e.g. https://github.com/edmondnathan -->
+        <a href="https://github.com/edmondnathan" target="_blank" rel="noopener noreferrer"
+            class="floating-social-link" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <!-- TWITTER/X — replace the URL below with yours e.g. https://twitter.com/edmondnathan -->
+        <a href="https://x.com/EstyleDrive" target="_blank" rel="noopener noreferrer"
+            class="floating-social-link" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+    </div>
+    
+    <script src="js/script_fixed.js"></script>
+
 </body>
 
 </html>
