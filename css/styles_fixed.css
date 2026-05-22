@@ -2,8 +2,8 @@
 
 /* ===== Base Styles ===== */
 :root {
-  --primary-color: #4361ee;
-  --secondary-color: #3a0ca3;
+  --primary-color: #5B8DEF;
+  --secondary-color: #3B6FD4;
   --accent-color: #f72585;
   --dark-color: #1a1a2e;
   --light-color: #f8f9fa;
@@ -87,19 +87,21 @@ body {
 .menu-toggle {
   display: none;
   position: fixed;
-  top: 1.5rem;
-  left: 1.5rem;
-  z-index: 1000;
-  background: var(--primary-color);
+  top: 1rem;
+  right: 1rem;
+  left: auto;
+  z-index: 1001;
+  background: rgba(26, 26, 46, 0.92);
   color: white;
-  border: none;
-  padding: 0.8rem 1.2rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 0.55rem 0.85rem;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
   font-weight: 600;
   gap: 0.5rem;
   align-items: center;
+  backdrop-filter: blur(6px);
 }
 
 .menu-toggle i {
@@ -379,9 +381,10 @@ body {
 }
 
 .project-card__image {
-  height: 220px;
+  height: 200px;
   overflow: hidden;
   position: relative;
+  flex-shrink: 0;
 }
 
 .project-card__image::before {
@@ -420,11 +423,10 @@ body {
 }
 
 .project-card__content {
-  padding: 1.75rem;
-  position: relative;
-  flex: 1;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 
 .project-card__title {
@@ -485,6 +487,30 @@ body {
 }
 
 .project-tools span i {
+  margin-right: 0.4rem;
+  font-size: 0.9rem;
+}
+
+/* Real tool logos as inline SVG images */
+.tool-svg-icon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  flex-shrink: 0;
+}
+
+/* Power BI logo inside a button — white tint to match button text */
+.btn-icon {
+  width: 14px;
+  height: 14px;
+  filter: brightness(0) invert(1);
+  margin-right: 0.4rem;
+}
+
+/* FA icons used as tool badges (e.g. SQL database icon) */
+.tool-fa-icon {
   margin-right: 0.4rem;
   font-size: 0.9rem;
 }
@@ -1258,8 +1284,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.85rem 1.75rem;
-  font-size: 1rem;
+  padding: 0.55rem 1.2rem;
+  font-size: 0.82rem;
   font-weight: 600;
   text-decoration: none;
   border-radius: 8px;
@@ -1315,6 +1341,20 @@ body {
   box-shadow: 0 8px 20px rgba(67, 97, 238, 0.2);
 }
 
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--primary-color);
+  border: 1.5px solid rgba(91, 141, 239, 0.35);
+  box-shadow: none;
+}
+
+.btn--ghost:hover {
+  background: rgba(91, 141, 239, 0.1);
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(91, 141, 239, 0.15);
+}
+
 .btn i {
   font-size: 1.1rem;
   transition: transform 0.3s ease;
@@ -1325,20 +1365,21 @@ body {
 }
 
 .hero__cta .btn {
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.92rem;
 }
 
 /* Button Mobile */
+/* Button Mobile */
 @media (max-width: 768px) {
   .btn {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 
   .hero__cta .btn {
-    padding: 0.85rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.65rem 1.25rem;
+    font-size: 0.88rem;
   }
 
   .project-links .btn {
@@ -1611,26 +1652,28 @@ textarea:focus {
 
 /* Make it always visible - no need for .visible class */
 .floating-social-link {
-  width: 55px;
-  height: 55px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: white;
-  color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.85);
+  color: #666;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
+  opacity: 0.6;
 }
 
 .floating-social-link:hover {
-  transform: translateX(-8px) scale(1.1);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+  transform: translateX(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  opacity: 1;
 }
 
 .floating-social-link i {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
 /* Individual colors on hover */

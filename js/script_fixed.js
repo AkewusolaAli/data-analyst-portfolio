@@ -84,22 +84,21 @@ const animateOnScroll = function () {
 
     elements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.3;
+        const screenPosition = window.innerHeight / 1.2;
 
         if (elementPosition < screenPosition) {
             element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
         }
     });
 };
 
-// Set initial state for animated elements
+// Set initial state — opacity only, NO translateY (translateY causes layout shifts
+// which make the page briefly taller than the viewport, flickering the scrollbar)
 document.querySelectorAll(
     '.project-card, .skill-category, .contact-card, .resume__placeholder, .blog__placeholder, .datasets__placeholder'
 ).forEach(el => {
     el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    el.style.transition = 'opacity 0.5s ease';
 });
 
 window.addEventListener('scroll', animateOnScroll);
